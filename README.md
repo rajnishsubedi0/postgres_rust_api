@@ -9,11 +9,14 @@ CREATE TABLE users (
     email VARCHAR UNIQUE NOT NULL
 );
 ```
-3) After enter "diesel print-schema > src/schema.rs" on terminal to generate schema.rs file as per your postgres table configuration. You can delete schema.rs from this clone and can generate that with that command.
-4) Then enter "cargo run"<br>
-To get users enter "curl http://127.0.0.1:8080/users" or can open from browser with localhost:8080/users
+3) After that enter ```diesel print-schema > src/schema.rs``` on terminal to generate schema.rs file as per your postgres table configuration. You can delete schema.rs from this clone and can generate that with that command.
+4) Then enter ```cargo run```
+To get users enter
+```
+curl http://127.0.0.1:8080/users" or can open from browser with localhost:8080/users
 To add users enter <p style="font-size: 20px;">"curl -X POST http://127.0.0.1:8080/users \
 <p style="font-size: 20px;">-H "Content-Type: application/json" \
-<p style="font-size: 20px;">-d '{"name": "Alice", "email": "alice@example.com"}'"
+<p style="font-size: 20px;">-d '{"name": "Alice", "email": "alice@example.com"}'
+```
 or
 You can also send data from rest api client on json format.
