@@ -17,6 +17,6 @@ curl http://127.0.0.1:8080/users" or can open from browser with localhost:8080/u
 To add users enter <p style="font-size: 20px;">"curl -X POST http://127.0.0.1:8080/users \
 -H "Content-Type: application/json" \
 -d '{"name": "Alice", "email": "alice@example.com"}'
-
+```
 or
 You can also send data from rest api client on json format.
